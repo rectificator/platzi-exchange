@@ -1,0 +1,51 @@
+markets = {
+    data:[{
+        exchangeId:"Zaif",
+        baseId:"comsa-eth",
+        quoteId:"bitcoin",
+        baseSymbol:"CMS",
+        quoteSymbol:"BTC",
+        volumeUsd24Hr:null,"priceUsd":"48774.8076343738415290",
+        volumePercent:null
+        },
+        {
+            exchangeId:"Zaif",
+            baseId:"comsa-xem",
+            quoteId:"bitcoin",
+            baseSymbol:"CMS",
+            quoteSymbol:"BTC",
+            volumeUsd24Hr:null,"priceUsd":"51065.1862180376756837",
+            volumePercent:null
+        },
+        {
+            exchangeId:"Zaif",
+        baseId:"monacoin",
+        quoteId:"bitcoin",
+        baseSymbol:"MONA",
+        quoteSymbol:"BTC",
+        volumeUsd24Hr:null,"priceUsd":"44852.8089648236715294",
+        volumePercent:null
+    },
+        {
+            exchangeId:"Zaif",
+        baseId:"ethereum",
+        quoteId:"bitcoin",
+        baseSymbol:"ETH",
+        quoteSymbol:"BTC",
+        volumeUsd24Hr:null,"priceUsd":"42843.2630068327495364",
+        volumePercent:null
+    },
+    {
+        exchangeId:"Binance",
+        baseId:"bitcoin",
+        quoteId:"tether",
+        baseSymbol:"BTC",
+        quoteSymbol:"USDT",
+        volumeUsd24Hr:"1164053322.0360484977218750",
+        priceUsd:"42600.5786667809585050",
+        volumePercent:"12.6947222784061558"
+    }],
+    timestamp:1644201820750
+}
+
+module.exports = markets
