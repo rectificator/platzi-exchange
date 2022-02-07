@@ -103,15 +103,12 @@ export default {
     },
     computed: {
         filteredAssets() {
-            return this.assets
-                .filter((asset) => {
+            return this.assets.filter((asset) => {
                     return (
                         asset.symbol
                             .toLowerCase()
                             .includes(this.filter.toLowerCase()) ||
-                        asset.name
-                            .toLowerCase()
-                            .includes(this.filter.toLowerCase())
+                        asset.name.toLowerCase().includes(this.filter.toLowerCase())
                     )
                 })
                 .sort((a, b) => {

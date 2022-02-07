@@ -19,23 +19,23 @@ export default {
         PxHeader,
     },
     data() {
-        return{
+        return {
             links: [
                 {
                     title: 'BTC',
-                    to: { name: 'coin-detail', params: { id: 'bitcoin' } }
+                    to: { name: 'coin-detail', params: { id: 'bitcoin' } },
                 },
                 {
                     title: 'ETH',
-                    to: { name: 'coin-detail', params: { id: 'ethereum' } }
+                    to: { name: 'coin-detail', params: { id: 'ethereum' } },
                 },
                 {
                     title: 'XRP',
-                    to: { name: 'coin-detail', params: { id: 'xrp' } }
-                }
-            ]
+                    to: { name: 'coin-detail', params: { id: 'xrp' } },
+                },
+            ],
         }
-    }
+    },
 }
 </script>
 

@@ -70,9 +70,7 @@
                         class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
                     >
                         {{
-                            fromUsd
-                                ? `USD a ${asset.symbol}`
-                                : `${asset.symbol} a USD`
+                            fromUsd ? `USD a ${asset.symbol}` : `${asset.symbol} a USD`
                         }}
                     </button>
 
@@ -170,12 +168,12 @@ export default {
 
     computed: {
         convertResult() {
-            if (!this.convertValue) {
+            if(!this.convertValue){
                 return 0
             }
             const result = this.fromUsd
                 ? this.convertValue / this.asset.priceUsd
-                : this.convertValue * this.asset.priceUsd
+                : this.convertValue * this.asset.priceUsd 
             return result.toFixed(4)
         },
         min() {
@@ -216,7 +214,7 @@ export default {
 
     methods: {
         toggleConverter() {
-            this.fromUsd = !this.fromUsd
+            this.fromUsd = ! this.fromUsd
         },
         getWebSite(exchange) {
             this.$set(exchange, 'isLoading', true)
@@ -237,7 +235,7 @@ export default {
                     console.log('Error: ', e)
                     this.$set(exchange, 'url', exchangeObj.exchangeUrl)
                 })
-                .finally(() => this.$set(exchange, 'isLoading', false))
+                .finally(() => (this.$set(exchange, 'isLoading', false)))
         },
         getCoin() {
             const id = this.$route.params.id

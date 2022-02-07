@@ -42,10 +42,10 @@ export default {
     },
 
     props: {
-        links:{
+        links: {
             type: Array,
             default: () => [],
-        }
-    }
+        },
+    },
 }
 </script>
